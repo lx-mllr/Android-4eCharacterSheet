@@ -1,0 +1,188 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".BioActivity" >
+
+    <TextView android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="27sp"/>
+    
+    <TextView android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/name"
+        android:textSize="24sp"/>
+    
+    <!-- Race and Class -->
+    <LinearLayout android:id="@+id/RC"
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:paddingTop="10dp">
+        
+	    <TextView android:id="@+id/race"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+        	android:gravity="center"
+	        android:layout_weight="1"
+	        android:textSize="20sp"/>
+    
+	    <TextView android:id="@+id/clss"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+        	android:gravity="center"
+	        android:layout_weight="1"
+	        android:textSize="20sp"/>
+    </LinearLayout>
+    
+    <!-- Level -->
+    <LinearLayout android:id="@+id/levelstuff"
+        android:layout_below="@id/RC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:paddingTop="10dp">
+        
+        <TextView android:id="@+id/levelView"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+        	android:gravity="center"
+	        android:layout_weight="1"
+	        android:textSize="20sp" />
+        
+        <TextView android:id="@+id/expView"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+        	android:gravity="center"
+	        android:layout_weight="1"
+	        android:textSize="20sp" />
+        
+    </LinearLayout>
+    
+    <!-- Paragon Path and Epic Destiny -->
+    <LinearLayout android:id="@+id/PPED"
+        android:layout_below="@id/levelstuff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:paddingTop="10dp">
+        
+	    <TextView android:id="@+id/path"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+        	android:gravity="center"
+	        android:layout_weight="1"
+	        android:textSize="20sp"/>
+    
+	    <TextView android:id="@+id/destiny"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+        	android:gravity="center"
+	        android:layout_weight="1"
+	        android:textSize="20sp"/>
+    </LinearLayout>
+    
+    <!-- Gender, Age, Size -->
+    <LinearLayout android:id="@+id/GAS"
+        android:layout_below="@id/PPED"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:paddingTop="10dp">
+        
+	    <TextView android:id="@+id/gender"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+        	android:gravity="center"
+	        android:layout_weight="1"
+	        android:textSize="20sp"/>
+    
+	    <TextView android:id="@+id/age"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+        	android:gravity="center"
+	        android:layout_weight="1"
+	        android:textSize="20sp"/>
+	    
+	    <TextView android:id="@+id/size"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+        	android:gravity="center"
+	        android:layout_weight="1"
+	        android:textSize="20sp"/>
+    </LinearLayout>
+    
+    <!-- Height, Weight -->
+    <LinearLayout android:id="@+id/HW"
+        android:layout_below="@id/GAS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:paddingTop="10dp" >
+        
+	    <TextView android:id="@+id/height"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+        	android:gravity="center"
+	        android:layout_weight="1"
+	        android:textSize="20sp"/>
+    
+	    <TextView android:id="@+id/weight"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+        	android:gravity="center"
+	        android:layout_weight="1"
+	        android:textSize="20sp"/>
+    </LinearLayout>
+    
+    <LinearLayout android:id="@+id/AD"
+        android:layout_below="@id/HW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp">
+    
+	    <TextView android:id="@+id/alignment"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:layout_weight="1"
+	        android:textSize="20sp" />
+    
+		<TextView android:id="@+id/diety"
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:gravity="center"
+		    android:layout_weight="1"
+		    android:textSize="20sp" />
+	
+	</LinearLayout>
+	
+	<!-- Languages -->
+	<TextView android:id="@+id/languages"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/AD"
+	    android:textSize="20sp" 
+        android:paddingTop="10dp" />
+	
+	<!-- Background -->
+	<TextView android:id="@+id/background"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/languages"
+	    android:textSize="20sp" 
+        android:paddingTop="10dp" />
+	
+	<!-- Personality -->
+	<TextView android:id="@+id/personality"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/background"
+	    android:textSize="20sp" 
+        android:paddingTop="10dp"/>
+	
+</RelativeLayout>

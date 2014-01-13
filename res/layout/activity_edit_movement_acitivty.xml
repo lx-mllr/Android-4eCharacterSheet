@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".EditMovementActivity" >
+
+    <TextView android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:text="@string/editMovementName"
+        android:textSize="27sp" />
+	
+	<LinearLayout android:id="@+id/base"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/name">
+	    
+	    <TextView 
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:gravity="right"
+	        android:layout_weight="1"
+	        android:text="@string/editMovementBase"
+	        android:textSize="16sp"/>
+	    
+	    <EditText android:id="@+id/editMovementBase"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:gravity="left"
+	        android:layout_weight="1"
+	        android:inputType="numberSigned" />
+	    
+	</LinearLayout>
+        
+	<LinearLayout android:id="@+id/armor"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/base">
+	    
+	    <TextView 
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:gravity="right"
+	        android:layout_weight="1"
+	        android:text="@string/editMovementArmor"
+	        android:textSize="16sp" />
+	    
+	    <EditText android:id="@+id/editMovementArmor"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:gravity="left"
+	        android:layout_weight="1"
+	        android:inputType="numberSigned"/>
+	    
+	</LinearLayout>
+	
+	<LinearLayout android:id="@+id/item"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/armor">
+	    
+	    <TextView 
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:gravity="right"
+	        android:layout_weight="1"
+	        android:text="@string/editMovementItem"
+	        android:textSize="16sp" />
+	    
+	    <EditText android:id="@+id/editMovementItem"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:gravity="left"
+	        android:layout_weight="1"
+	        android:inputType="numberSigned"/>
+	    
+	</LinearLayout>
+	
+	<LinearLayout android:id="@+id/misc"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/item">
+	    
+	    <TextView 
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:gravity="right"
+	        android:layout_weight="1"
+	        android:text="@string/editMovementMisc"
+	        android:textSize="16sp" />
+	    
+	    <EditText android:id="@+id/editMovementMisc"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:gravity="left"
+	        android:layout_weight="1"
+	        android:inputType="numberSigned"/>
+	    
+	</LinearLayout>
+
+</RelativeLayout>

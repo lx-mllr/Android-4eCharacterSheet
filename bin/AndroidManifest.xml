@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.echaractersheet"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.echaractersheet.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.echaractersheet.CharacterActivity"
+            android:label="@string/title_activity_character"
+            android:parentActivityName="com.example.echaractersheet.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.echaractersheet.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.echaractersheet.BioActivity"
+            android:label="@string/title_activity_bio"
+            android:parentActivityName="com.example.echaractersheet.CharacterActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.echaractersheet.CharacterActivity" />
+        </activity>
+        <activity
+            android:name="com.example.echaractersheet.EditBioActivity"
+            android:label="@string/title_activity_edit_bio"
+            android:parentActivityName="com.example.echaractersheet.BioActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.echaractersheet.BioActivity" />
+        </activity>
+        <activity
+            android:name="com.example.echaractersheet.SkillsActivity"
+            android:label="@string/title_activity_skills"
+            android:parentActivityName="com.example.echaractersheet.CharacterActivity" >
+"
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.echaractersheet.CharacterActivity" />
+        </activity>
+        <activity
+            android:name="com.example.echaractersheet.EditSkillActivity"
+            android:label="@string/title_activity_edit_skill"
+            android:parentActivityName="com.example.echaractersheet.SkillsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.echaractersheet.SkillsActivity" />
+        </activity>
+        <activity
+            android:name="com.example.echaractersheet.StatsActivity"
+            android:label="@string/title_activity_stats"
+            android:parentActivityName="com.example.echaractersheet.CharacterActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.echaractersheet.CharacterActivity" />
+        </activity>
+        <activity
+            android:name="com.example.echaractersheet.EditAbilityScoreActivity"
+            android:label="@string/title_activity_edit_ability_score_activty"
+            android:parentActivityName="com.example.echaractersheet.StatsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.echaractersheet.StatsActivity" />
+        </activity>
+        <activity
+            android:name="com.example.echaractersheet.EditDefenseActivity"
+            android:label="@string/title_activity_edit_defense"
+            android:parentActivityName="com.example.echaractersheet.StatsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.echaractersheet.StatsActivity" />
+        </activity>
+        <activity
+            android:name="com.example.echaractersheet.EditInitiativeActivity"
+            android:label="@string/title_activity_edit_initiative"
+            android:parentActivityName="com.example.echaractersheet.StatsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.echaractersheet.StatsActivity" />
+        </activity>
+        <activity
+            android:name="com.example.echaractersheet.EditMovementActivity"
+            android:label="@string/title_activity_edit_movement_acitivty"
+            android:parentActivityName="com.example.echaractersheet.StatsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.echaractersheet.StatsActivity" />
+        </activity>
+        <activity
+            android:name="com.example.echaractersheet.EditPassiveSkillsActivity"
+            android:label="@string/title_activity_edit_passive_skills"
+            android:parentActivityName="com.example.echaractersheet.StatsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.echaractersheet.StatsActivity" />
+        </activity>
+    </application>
+
+</manifest>

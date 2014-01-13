@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">4e Character Sheet</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Main Activity -->
+    <string name="add_new_character">Add Character</string>
+    <string name="delete_character">Tap and hold a character to delete it.</string>
+
+    <!-- Character Activity -->
+    <string name="title_activity_character">Character</string>
+    <string name="characterSaveButton">Save Character</string>
+
+    <!-- Bio Activity -->
+    <string name="title_activity_bio">Biography</string>
+    <string name="action_edit">Edit</string>
+
+    <!-- Edit Bio Activity -->
+    <string name="title_activity_edit_bio">Edit Biography</string>
+    <string name="saveButton">Save</string>
+    <string name="editName">Name</string>
+    <string name="editTitle">Title</string>
+    <string name="editRace">Race</string>
+    <string name="editClass">Class</string>
+    <string name="editLevel">Level</string>
+    <string name="editExp">Experience</string>
+    <string name="editNextLevel">Next Level</string>
+    <string name="editPath">Paragon Path</string>
+    <string name="editDestiny">Epic Destiny</string>
+    <string name="editGender">Gender</string>
+    <string name="editAge">Age</string>
+    <string name="editSize">Size</string>
+    <string name="editHeight">Height</string>
+    <string name="editWeight">Weight</string>
+    <string name="editAlignment">Alignment</string>
+    <string name="editDeity">Deity</string>
+    <string name="editLanguages">Languages</string>
+    <string name="editBackground">Background</string>
+    <string name="editPersonality">Personality</string>
+    <string name="title_activity_skills">Skills</string>
+
+    <!-- Edit Skills -->
+    <string name="title_activity_edit_skill">Edit Skill</string>
+    <string name="trained">Trained</string>
+    <string name="AbilMod">Ability Modifier + &#189; level:</string>
+    <string name="armorPen">Armor Penalty:</string>
+    <string name="miscMod">Miscellaneous Modifiers:</string>
+
+    <!-- Stats Activity -->
+    <string name="title_activity_stats">Stats</string>
+
+    <!-- Edit Ability Score -->
+    <string name="title_activity_edit_ability_score_activty">Edit Ability Score</string>
+    <string name="editAbilScore">Ability Score:</string>
+    <string name="editAbilMod">Ability Modifier:</string>
+
+    <!-- Edit Defense -->
+    <string name="title_activity_edit_defense">Edit Defense</string>
+    <string name="editDefenseConditionals">ex. +2 for Opportunity Attacks</string>
+    <string name="editDefense10Plus">10 + &#189; level:</string>
+    <string name="editDefenseAbilArmor">Ability and/or Armor bonus:</string>
+    <string name="editDefenseClass">Class Bonus:</string>
+    <string name="editDefenseFeat">Feat Bonus:</string>
+    <string name="editDefenseEnh">Enhancement Bonus:</string>
+    <string name="editDefenseMisc">Miscellaneous Bonus</string>
+
+    <!-- Edit Initiative -->
+    <string name="title_activity_edit_initiative">Edit Initiative</string>
+    <string name="editInitName">Initiative</string>
+    <string name="editInitDexMod">DEX Mod</string>
+    <string name="editInitHalfLevel">&#189; Level</string>
+    <string name="editInitMiscMod">Miscellaneous Bonus</string>
+    <string name="editInitDieRoll">D20 Roll</string>
+
+    <!-- Edit Movement -->
+    <string name="title_activity_edit_movement_acitivty">Edit Movement</string>
+    <string name="editMovementName">Movement</string>
+    <string name="editMovementBase">Base</string>
+    <string name="editMovementArmor">Armor Penalty</string>
+    <string name="editMovementItem">Item Bonus</string>
+    <string name="editMovementMisc">Miscellaneous Bonus</string>
+    
+    <!-- Edit Passive Skills -->
+    <string name="title_activity_edit_passive_skills">Edit Passive Skills</string>
+    <string name="editSkillsTenPlus">10  +</string>
+    <string name="editSkillsSkillBonus">Skill Bonus</string>
+
+</resources>

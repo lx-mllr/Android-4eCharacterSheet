@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".EditSkillActivity" >
+
+    <TextView android:id="@+id/editSkillName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+        android:textSize="27sp" />
+    
+    <TextView android:id="@+id/editAbilName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editSkillName"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp" />
+            
+	<CheckBox
+	    android:id="@+id/trainedCB"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/editAbilName"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="25dp"
+	    android:text="@string/trained"
+	    android:gravity="center" />
+	
+	<LinearLayout android:id="@+id/abilMod"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/trainedCB">
+	    
+	    <TextView 
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:gravity="right"
+	        android:layout_weight="1"
+	        android:text="@string/AbilMod"
+	        android:textSize="16sp"/>
+	    
+	    <EditText android:id="@+id/editAbilMod"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:gravity="left"
+	        android:layout_weight="1"
+	        android:inputType="numberSigned" />
+	    
+	</LinearLayout>
+        
+	<LinearLayout android:id="@+id/armorPen"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/abilMod">
+	    
+	    <TextView 
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:gravity="right"
+	        android:layout_weight="1"
+	        android:text="@string/armorPen"
+	        android:textSize="16sp" />
+	    
+	    <EditText android:id="@+id/editArmorPen"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:gravity="left"
+	        android:layout_weight="1"
+	        android:inputType="numberSigned"/>
+	    
+	</LinearLayout>
+	
+	<LinearLayout android:id="@+id/miscMod"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/armorPen">
+	    
+	    <TextView 
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:gravity="right"
+	        android:layout_weight="1"
+	        android:text="@string/miscMod"
+	        android:textSize="16sp" />
+	    
+	    <EditText android:id="@+id/editMiscMod"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:gravity="left"
+	        android:layout_weight="1"
+	        android:inputType="numberSigned"/>
+	    
+	</LinearLayout>
+
+</RelativeLayout>
